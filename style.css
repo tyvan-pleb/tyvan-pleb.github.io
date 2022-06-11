@@ -1,0 +1,74 @@
+html { scroll-behavior: smooth; }
+body { margin:0; padding: 0; font-family: 'Roboto' }
+.contact-info h2, .gallery-wrapper h2, .content-wrapper h2 { text-align: center; font-size: 36px; font-weight: 700; color:#c8102e; padding-bottom: 40px;}
+section { padding: 60px 0; }
+.up-header { background-color: #fafafa; border: #f1f1f1 solid 1px; height: 24px;}
+.header { background-color: #fff; height: 48px; width: 100%; box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);}
+.h-wrapper { width: 1170px; margin:0 auto; }
+.logo { height: 192px; width: 160px; display: block; float: left; position: static; margin-top: -4px; }
+.first { height: 570px; width: 100%; background-image: url(./aptara/01.jpg); background-repeat: no-repeat; background-position: center; padding: 0;}
+.nav-menu { display: grid; grid-template-columns: auto auto auto auto auto; padding-left: 30px; padding-top: 12px;}
+.nav-menu a { text-decoration: none; color: #000; font-size: 17px; font-weight: 300;}
+.nav-menu a:hover { color: #c8102e;}
+.content-wrapper { margin: 0 auto; width: 980px; }
+.about-us { background-color: #fff; }
+.about-grid { display: grid; grid-template-columns: auto auto;}
+.about-text { padding: 80px; font-size: 19px; line-height: 1.5; padding-top: 20px;}
+.about-image { padding-top: 0px; }
+.about-us p { font-size: 19px; line-height: 1.5; }
+.trainer { display: grid; grid-template-columns: auto auto; column-gap: 30px; padding: 25px; border: 4px solid #eeeeee; margin-top: 40px;}
+.t-photo { width: 360px; height: auto; }
+.t-info h3 { color: #c8102e; }
+.t-info ul { font-size: 14px; }
+.first-box { padding-top: 240px; text-align: center;  color: #fff; }
+.first-box h1 { font-weight: 700; }
+
+
+.portfolio-menu{
+	text-align:center;
+}
+.portfolio-menu ul li {
+	display:inline-block;
+	margin:0;
+	list-style:none;
+	padding:10px 15px;
+	cursor:pointer;
+	-webkit-transition:all 05s ease;
+	-moz-transition:all 05s ease;
+	-ms-transition:all 05s ease;
+	-o-transition:all 05s ease;
+	transition:all .5s ease;
+}
+
+.portfolio-item {
+	/*width:100%;*/
+}
+.portfolio-item .item{
+	/*width:303px;*/
+	float:left;
+	margin-bottom:10px;
+}
+
+.gallery-wrapper {margin: 0 auto; width: 1280px; }
+.gallery { background-color: #eee; }
+.gallery-box { padding: 20px 0; }
+.prices { background-color: #eee;}
+.prices-box { background-color: #fff; padding: 35px; margin-bottom: 25px; border-radius: 6px;}
+.cena { font-size: 32px; padding-bottom: 0; margin-bottom: 0; font-weight: 700;}
+.name { font-size: 26px; font-weight: 700;}
+.pp { font-size: 19px;}
+.contact-box { display: grid; grid-template-columns: 50%; grid-template-areas: 'item item';}
+.contact-info { padding: 35px;}
+
+[class*="copyrights-pane"] {
+	display: none !important;
+}
+
+[class*="ground-pane"] {
+	filter: grayscale(1);
+}
+
+footer { 
+    height: 260px;
+    background-color: #202021;
+}

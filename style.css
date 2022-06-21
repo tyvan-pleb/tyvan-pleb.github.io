@@ -2,12 +2,12 @@ html { scroll-behavior: smooth; }
 body { margin:0; padding: 0; font-family: 'Roboto' }
 .contact-info h2, .gallery-wrapper h2, .content-wrapper h2 { text-align: center; font-size: 36px; font-weight: 700; color:#c8102e; padding-bottom: 40px;}
 section { padding: 60px 0; }
-.up-header { background-color: #fafafa; border: #f1f1f1 solid 1px; height: 24px;}
-.header { background-color: #fff; height: 48px; width: 100%; box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);}
-.h-wrapper { width: 1170px; margin:0 auto; }
-.logo { height: auto; width: 160px; float: left; position: absolute; margin-top: -4px; z-index: 3; }
+.up-header { background-color: #fafafa; border: #f1f1f1 solid 1px; height: 24px; z-index: 10;}
+.header { background-color: #fff; height: 48px; width: 100%; box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%); z-index: 10;}
+.h-wrapper { width: 1170px; margin:0 auto;}
+.logo { position: absolute; margin-top: -4px; z-index: 5; }
 .first { height: 570px; padding: 0;}
-.nav-menu { display: grid; grid-template-columns: auto auto auto auto auto; padding-left: 30px; padding-top: 12px;}
+.nav-menu { display: grid; grid-template-columns: auto auto auto auto auto; padding-left: 30px; padding-top: 12px; margin-left: 160px;}
 .nav-menu a { text-decoration: none; color: #000; font-size: 17px; font-weight: 300;}
 .nav-menu a:hover { color: #c8102e;}
 .content-wrapper { margin: 0 auto; width: 980px; }
@@ -93,9 +93,9 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
-	.gallery-wrapper { width: 440px; }
-	.h-wrapper { width: 550px; }
-	.content-wrapper { width: 550px;}
+	.gallery-wrapper { width: 1100vw; padding: 15px; }
+	.h-wrapper { width: 100vw; padding: 15px;}
+	.content-wrapper { width: 100vw; padding: 15px;}
 	.about-grid { grid-template-columns: auto; }
 	.about-image { display: grid; justify-content: center; }
 	.trainer { grid-template-columns: auto;  }
@@ -106,12 +106,15 @@ footer {
 
 @media screen and (max-width: 575px) {
 	.gallery-wrapper { width: 1100vw; padding: 15px; }
+	.header {display: none;}
+	.up-header {display: none;}
 	.h-wrapper { width: 100vw; padding: 15px;}
-	.content-wrapper { width: 100vw; padding: 15px;}
+	.content-wrapper { width: 100vw; padding: 15px;;}
 	.about-grid { grid-template-columns: auto; }
 	.about-image { display: grid; justify-content: center; }
 	.trainer { grid-template-columns: auto;  }
 	.t-photo { display: grid; justify-content: center;}
 	.contact-box { grid-template-areas: 'item';}
+	.gallery { display: none; }
 	.map {display: none;}
 }

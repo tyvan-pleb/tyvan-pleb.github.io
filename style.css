@@ -5,8 +5,8 @@ section { padding: 60px 0; }
 .up-header { background-color: #fafafa; border: #f1f1f1 solid 1px; height: 24px;}
 .header { background-color: #fff; height: 48px; width: 100%; box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);}
 .h-wrapper { width: 1170px; margin:0 auto; }
-.logo { height: 192px; width: 160px; display: block; float: left; position: static; margin-top: -4px; }
-.first { height: 570px; width: 100%; background-image: url(./aptara/01.jpg); background-repeat: no-repeat; background-position: center; padding: 0;}
+.logo { height: auto; width: 160px; float: left; position: absolute; margin-top: -4px; z-index: 3; }
+.first { height: 570px; padding: 0;}
 .nav-menu { display: grid; grid-template-columns: auto auto auto auto auto; padding-left: 30px; padding-top: 12px;}
 .nav-menu a { text-decoration: none; color: #000; font-size: 17px; font-weight: 300;}
 .nav-menu a:hover { color: #c8102e;}
@@ -17,11 +17,12 @@ section { padding: 60px 0; }
 .about-image { padding-top: 0px; }
 .about-us p { font-size: 19px; line-height: 1.5; }
 .trainer { display: grid; grid-template-columns: auto auto; column-gap: 30px; padding: 25px; border: 4px solid #eeeeee; margin-top: 40px;}
-.t-photo { width: 360px; height: auto; }
+.t-photo { height: auto; }
 .t-info h3 { color: #c8102e; }
 .t-info ul { font-size: 14px; }
 .first-box { padding-top: 240px; text-align: center;  color: #fff; }
 .first-box h1 { font-weight: 700; }
+.carousel-inner { width: 100%; height: 570px; overflow:hidden;}
 
 
 .portfolio-menu{
@@ -49,7 +50,7 @@ section { padding: 60px 0; }
 	margin-bottom:10px;
 }
 
-.gallery-wrapper {margin: 0 auto; width: 1280px; }
+.gallery-wrapper {margin: 0 auto; width: 1160px; }
 .gallery { background-color: #eee; }
 .gallery-box { padding: 20px 0; }
 .prices { background-color: #eee;}
@@ -57,7 +58,7 @@ section { padding: 60px 0; }
 .cena { font-size: 32px; padding-bottom: 0; margin-bottom: 0; font-weight: 700;}
 .name { font-size: 26px; font-weight: 700;}
 .pp { font-size: 19px;}
-.contact-box { display: grid; grid-template-columns: 50%; grid-template-areas: 'item item';}
+.contact-box { display: grid; grid-template-columns: 49%; grid-template-areas: 'item item';}
 .contact-info { padding: 35px;}
 
 [class*="copyrights-pane"] {
@@ -71,4 +72,46 @@ section { padding: 60px 0; }
 footer { 
     height: 260px;
     background-color: #202021;
+}
+
+@media screen and (max-width: 1200px) {
+	
+}
+
+@media screen and (max-width: 1199px) {
+	.gallery-wrapper { width: 980px; }
+	.h-wrapper { width: 980пpx; }
+}
+
+@media screen and (max-width: 991px) {
+	.gallery-wrapper { width: 710px; }
+	.h-wrapper { width: 720px; }
+	.content-wrapper { width: 720px;}
+	.about-grid { grid-template-columns: auto; }
+	.about-image { display: grid; justify-content: center; }
+	.about-text { padding: 0; margin-top: 25px;}
+}
+
+@media screen and (max-width: 767px) {
+	.gallery-wrapper { width: 440px; }
+	.h-wrapper { width: 550px; }
+	.content-wrapper { width: 550px;}
+	.about-grid { grid-template-columns: auto; }
+	.about-image { display: grid; justify-content: center; }
+	.trainer { grid-template-columns: auto;  }
+	.t-photo { display: grid; justify-content: center;}
+	.contact-box { grid-template-areas: 'item';}
+	.map {display: none;}
+}
+
+@media screen and (max-width: 575px) {
+	.gallery-wrapper { width: 1100vw; padding: 15px; }
+	.h-wrapper { width: 100vw; padding: 15px;}
+	.content-wrapper { width: 100vw; padding: 15px;}
+	.about-grid { grid-template-columns: auto; }
+	.about-image { display: grid; justify-content: center; }
+	.trainer { grid-template-columns: auto;  }
+	.t-photo { display: grid; justify-content: center;}
+	.contact-box { grid-template-areas: 'item';}
+	.map {display: none;}
 }
